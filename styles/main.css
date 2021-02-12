@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.human {
+  width: 5em;
+  height: 15em;
+}
+
+.human__face {
+  border-radius: 2em 2em 0 0;
+  background: #11998e;
+  background: -webkit-gradient(linear, left top, right top, from(#38ef7d), to(#11998e));
+  background: linear-gradient(to right, #38ef7d, #11998e);
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0.6em;
+}
+
+.human__face--red > div {
+  background-color: #fb3f6b;
+}
+
+.human__face--green > div {
+  background-color: #5efb3f;
+}
+
+.human__face--white > div {
+  background-color: #ffffff;
+}
+
+.human__face--brown > div {
+  background-color: #37210a;
+}
+
+.human__eye {
+  width: 1.5em;
+  height: 1.5em;
+  background: white;
+  border-radius: 50%;
+}
+
+.human__twist {
+  width: 100%;
+  height: 30%;
+  background: #fc466b;
+  background: -webkit-gradient(linear, left top, right top, from(#3f5efb), to(#fc466b));
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+}
+
+.human__legs {
+  width: 100%;
+  height: 30%;
+  background: #0f0c29;
+  background: -webkit-gradient(linear, left top, right top, from(#24243e), color-stop(#302b63), to(#0f0c29));
+  background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 69% 100%, 69% 24%, 29% 24%, 28% 100%, 0 100%, 0 0);
+          clip-path: polygon(100% 0, 100% 100%, 69% 100%, 69% 24%, 29% 24%, 28% 100%, 0 100%, 0 0);
+}
+
+.human--tall {
+  height: 30em;
+}
+
+.human--short {
+  height: 15em;
+}
+
+.human--fat {
+  width: 10em;
+}
+
+.human--fat .human__face {
+  padding: 2em;
+}
+/*# sourceMappingURL=main.css.map */
